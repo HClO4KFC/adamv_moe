@@ -41,6 +41,7 @@ def main(_):
   config_params = _CONFIG_PARAM.value or []
   # enable relative paths within p5x configs.
   gin.add_config_file_search_path('third_party/py/t5x/configs')
+  gin.add_config_file_search_path('vision_transformer/flaxformer/build/lib/flaxformer/t5x/configs')
   gin.parse_config_files_and_bindings([_CONFIG_PATH.value], config_params)
   if not _AES.value:
     trainer_utils.train_vmoe_mtl(_OUTPUT_DIR.value)
