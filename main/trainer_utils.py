@@ -44,7 +44,7 @@ from vmoe.data import pjit_utils
 from vmoe.train import schedule
 from vmoe.train import trainer
 
-from adamv_moe.main import evaluator
+from main import evaluator
 
 
 gin.external_configurable(optax.sgd)

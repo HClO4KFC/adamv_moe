@@ -22,7 +22,7 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 
-from adamv_moe.modeling.modules import TAPSDense
+from modeling.modules import TAPSDense
 
 
 def posemb_sincos_2d(h, w, width, temperature=10_000., dtype=jnp.float32):

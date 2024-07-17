@@ -21,7 +21,7 @@ import gin
 import jax
 import tensorflow.compat.v2 as tf
 
-from adamv_moe.main import trainer_utils
+from main import trainer_utils
 _CONFIG_PATH = flags.DEFINE_string('config_path', None, 'paths to gin config.')
 _CONFIG_PARAM = flags.DEFINE_multi_string(
     'gin_bindings', None, 'Newline separated list of Gin parameter bindings.')

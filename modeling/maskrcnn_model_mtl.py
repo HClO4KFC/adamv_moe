@@ -27,8 +27,8 @@ from jax import lax
 import jax.numpy as jnp
 
 
-from adamv_moe.modeling import cls_heads
-from adamv_moe.modeling import uvit_vmoe_mtl
+from modeling import cls_heads
+from modeling import uvit_vmoe_mtl
 
 ModuleDef = Any
 Array = jnp.ndarray
