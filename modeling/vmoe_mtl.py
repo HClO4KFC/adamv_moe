@@ -22,8 +22,8 @@ import jax.numpy as jnp
 import numpy as np
 from vmoe import utils
 
-from moe_mtl.modeling.modules import TAPSDense
-from moe_mtl.router import router
+from adamv_moe.modeling.modules import TAPSDense
+from adamv_moe.router import router
 
 
 Array = jnp.ndarray

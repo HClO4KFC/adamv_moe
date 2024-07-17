@@ -24,7 +24,7 @@ import gin
 import numpy as np
 
 
-from moe_mtl.modeling import vmoe_mtl
+from adamv_moe.modeling import vmoe_mtl
 
 
 KwArgs = Mapping[str, Any]
