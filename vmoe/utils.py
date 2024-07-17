@@ -26,7 +26,8 @@ PRNGKey = jax.Array
 
 def get_flops_and_seconds_per_device(
     compiled_fn
-) -> Tuple[float | None, float | None]:
+# ) -> Tuple[float | None, float | None]:
+):
   """Returns the FLOPs and optimal seconds per device of a compiled function."""
   cost_analysis = compiled_fn.cost_analysis()[0]
   flops_per_device = cost_analysis.get('flops')
