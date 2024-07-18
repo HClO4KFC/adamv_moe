@@ -465,6 +465,11 @@ def make_dataset_iterator(dataset):
   return ds_iter
 
 
+# def train_vmoe_mtl(
+#     output_dir,
+#     num_expert_partitions = gin.REQUIRED,
+#     input_fn_det = gin.REQUIRED,
+#     input_fn_cls = gin.REQUIRED):
 @gin.configurable(denylist=["output_dir"])
 def train_vmoe_mtl(
     output_dir,
