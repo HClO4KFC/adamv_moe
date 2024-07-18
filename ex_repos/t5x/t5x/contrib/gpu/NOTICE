@@ -1,5 +1,0 @@
-T5X in JAX
-
-This repository includes source code (in "t5x/tfds_pile.py") from:
-* https://github.com/EleutherAI/the-pile
-
