@@ -18,6 +18,7 @@ import enum
 import functools
 from typing import Any, Dict, Mapping, Optional
 from absl import logging
+import tensorflow as tf
 
 from flax import linen as nn
 import gin
@@ -31,7 +32,7 @@ KwArgs = Mapping[str, Any]
 
 
 @gin.register
-class UViTVMoEMTL(base.BaseModel):
+class UViTVMoEMTL(tf.keras.Model):
   """Universal Vision Transformer (https://arxiv.org/pdf/2112.09747.pdf)."""
   encoder: KwArgs
   patch_size_det: int = 8
