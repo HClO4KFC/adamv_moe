@@ -22,8 +22,8 @@ evaluate_vmoe_mtl.input_fn_cls = 1
 evaluate_vmoe_mtl.input_fn_det = 1
 
 # .\dataloaders\jax_loader.get_pjit_input
-dataloaders.jax_loader.get_pjit_input.loader_fn = 1
-dataloaders.jax_loader.get_pjit_input.batch_size = 1
+get_pjit_input.loader_fn = 1
+get_pjit_input.batch_size = 1
 
 # \ex_repos\t5x\t5x\gin_utils.sum_fn
 # .\ex_repos\t5x\t5x\gin_utils.bool_fn

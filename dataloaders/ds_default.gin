@@ -1,0 +1,3 @@
+# .\dataloaders\jax_loader.get_pjit_input
+get_pjit_input.loader_fn = 1
+get_pjit_input.batch_size = 1
