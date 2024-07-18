@@ -1,5 +1,5 @@
 
 # ./main/trainer_utils.train_vmoe_mtl
 train_vmoe_mtl.num_expert_partitions = 4
-main/trainer_utils/train_vmoe_mtl.input_fn_det = 4
-main/trainer_utils/train_vmoe_mtl.input_fn_cls = 4
+train_vmoe_mtl.input_fn_det = 4
+train_vmoe_mtl.input_fn_cls = 4
