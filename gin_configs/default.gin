@@ -1,4 +1,4 @@
-from dataloaders.jax_loader import get_pjit_input
+import dataloaders.jax_loader
 
 
 # ./main/trainer_utils.train_vmoe_mtl
