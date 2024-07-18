@@ -1,0 +1,32 @@
+
+# ./main/trainer_utils.train_vmoe_mtl
+train_vmoe_mtl.num_expert_partitions = 1  # 专家模型的分组个数，不能超过当前可用的设备个数
+train_vmoe_mtl.input_fn_det = 'get_pjit_input'  # 目标检测任务的输入函数，用字符串给出，没有输入，输出dataset, as_numpy_dataset
+train_vmoe_mtl.input_fn_cls = 'get_pjit_input'  # 分类任务的输入输入函数，用字符串给出，没有输入，输出dataset, as_numpy_dataset
+# trainer_utils.py:299.create_input_generator
+# 可选的输入函数：get_pjit_input
+
+# ./main/trainer_utils._train_vmoe_mtl
+# _train_vmoe_mtl.input_fn_det = 1
+# _train_vmoe_mtl.input_fn_cls = 1
+_train_vmoe_mtl.model_fn = 'UViTVMoEMTL'
+_train_vmoe_mtl.optimizer_def = 'OptimizerDef'  #Adafactor, OptaxWrapper, MultiOptimizer
+_train_vmoe_mtl.loss_fn = 1
+_train_vmoe_mtl.det_learning_rate = 1
+_train_vmoe_mtl.cls_learning_rate = 1
+_train_vmoe_mtl.total_train_steps = 1
+_train_vmoe_mtl.real_bs_det = 1
+_train_vmoe_mtl.real_bs_cls = 1
+
+# ./main/trainer_utils.evaluate_vmoe_mtl
+evaluate_vmoe_mtl.num_expert_partitions = 1
+evaluate_vmoe_mtl.input_fn_cls = 1
+evaluate_vmoe_mtl.input_fn_det = 1
+
+# .\dataloaders\jax_loader.get_pjit_input
+# get_pjit_input.loader_fn = 1
+# get_pjit_input.batch_size = 1
+
+# \ex_repos\t5x\t5x\gin_utils.sum_fn
+# .\ex_repos\t5x\t5x\gin_utils.bool_fn
+# .\ex_repos\t5x\t5x\gin_utils.string_split_fn

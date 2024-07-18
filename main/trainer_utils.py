@@ -523,7 +523,7 @@ def _train_vmoe_mtl(
   """Train the model."""
   if not output_dir:
     raise ValueError("output_dir should be a non-empty path.")
-  dataset_det, batch_det = create_input_generator(input_fn_det)
+  dataset_det, batch_det = create_input_generator(input_fn_det)  # TODO：阅读进度
   dataset_cls, batch_cls = create_input_generator(input_fn_cls)
 
   if isinstance(batch_det, tuple):
